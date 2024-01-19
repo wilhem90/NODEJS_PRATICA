@@ -5,17 +5,7 @@ const porta = 8080
 
 app.get('/message', (req, res) => {
     res.statusCode = 200
-    res.send({
-        id: 1,
-        balance: 1805,
-        tipoMoeda: "BRL",
-        nome: "Wilhem Wundt",
-        sobrenome: "Maxime",
-        idade: 34,
-        pais: "Brasil",
-        estadoCivil: "Solteiro",
-        escolaridade: "Superior Imcompleto",
-    })
+    res.send("Hello World!")
 })
 
 app.listen(porta, () => {
