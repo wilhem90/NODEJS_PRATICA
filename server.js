@@ -1,14 +1,10 @@
-const express = require("express")
-const app = express()
-const rotas = require("./router")
-const porta = 8080
+const express = require("express");
+const app = express();
+const porta = 8080;
 
-    app.use('/', rotas)
+const { router } = require("./router");
+    app.use('/', router)
+
     app.listen(porta, () => {
         console.log(`Meu servidor esta rodando! http://localhost:${porta}/message`);
     })
-
-
-
-
-    
